@@ -41,17 +41,4 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-
-                groupId = 'com.github.LogeshM05'
-                artifactId = 'rustLibrary'
-                version = '1.0.0'
-            }
-        }
-    }
-}
 
